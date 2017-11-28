@@ -6,28 +6,44 @@ adr varchar(120),
 tel varchar(12),
 PRIMARY KEY id_people
 );
+
 CREATE TABLE pets (
 id_pets int NOT NULL,
-id_people int,
+owner int,
 name varchar(100),
 kind varchar(20),
 breed varchar(30),
 sex varchar(10),
 birth date,
-status varchar(20)
+status varchar(20),
+PRIMARY KEY id_pets
 );
-CREATE TABLE priem (
 
+CREATE TABLE priem (
+id_priem int NOT NULL,
+priem_datetime datetime,
+patient int,
+complain varchar(255),
+anamnez text,
+diagnoz varchar(255),
+procedures text,
+naznacheno text,
+priem_vel int,
+PRIMARY KEY id_priem
 );
+
 CREATE TABLE vaccination (
 
 );
+
 CREATE TABLE doctors (
 
 );
+
 CREATE TABLE shedule (
 
 );
+
 CREATE TABLE cremation (
 
 );
